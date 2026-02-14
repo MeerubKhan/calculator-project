@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins','sans-serif';
+    box-sizing:border-box;
+}
+
+.container{
+    width:100%;
+    height:500vh;
+    background-color: #e3f9ff;
+    display:flex;
+    justify-content: center;
+}
+
+.calculator{
+    background-color: #3a4452;
+    width:45%;
+    height:95%;
+    margin-top: 70px;
+   
+}
+
+form{
+   padding:10px 10px 10px 10px;
+
+}
+
+.calculator form input{
+    border:0;
+    outline:0;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
+    /*box-shadow: X-offset Y-offset blur-radius color;
+    X-offset → horizontal shift (+ moves right, − moves left)
+    Y-offset → vertical shift (+ moves down, − moves up)
+    blur-radius → how soft or sharp the shadow is
+    color → can be a named color, hex, or rgba Since they’re comma-separated, it means two shadows are applied at the same time.
+   This is a common “neumorphism” effect — making the element look pressed or raised.*/
+
+
+
+    background: transparent;/*This means the element’s background is invisible — whatever is behind it will show through.
+    If your calculator buttons have this, their color comes only from borders or shadows, not from a solid fill*/
+    
+    font-size: 20px;
+    color:#fff;
+    cursor:pointer;  /* This changes the mouse cursor to the hand icon (like a link) when hovering over the element. */
+    margin:5px;
+
+}
+input{
+    width:100%;
+    height:10vh;
+    background-color:#3a4452;
+}
+
+.c{
+    text-align:right;
+    font-size:80rem ;
+    padding-right: 10px; /* to move the text away from right side little bit */
+    /*Why padding-right is better than margin-right here:
+    padding-right creates space inside the input, so the text moves inward from the edge.
+    margin-right would only push the whole input box away from the right side of the container 
+    — it won’t affect the text inside.*/
+}
+
+.row{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.first-row{
+    margin-top:10px;
+}
+
+#operator{
+    color:#33ffd8
+}
+
+input:hover{
+    color:red;
+}
+
+.convertor{
+    height:50vh;
+    width:100%;
+    background-color:#3a4452; 
+    display:flex;
+   /* align-items: center;*/
+    justify-content:flex-start;
+    justify-content:space-between;
+
+}
+
+.con{
+    height:40%;
+    width:45%;
+    background-color:#337357; 
+    border-radius: 10px;
+    border-color: whitesmoke;  
+    color: whitesmoke; 
+    display: flex;
+    /*So, in the default case (flex-direction: row):
+    justify-content: center; → centers horizontally.
+    align-items: center; → centers vertically.
+    If you switch to flex-direction: column:
+    justify-content: center; → centers vertically.
+    align-items: center; → centers horizontally.*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* vertical centering */
+    text-align: center;
+}
+
+select{
+    color: whitesmoke;
+    background-color:#337357;
+    height:60px;
+    width: 270px;
+    font-size:25px;
+}
+
+input{
+    height:60px;
+    width: 270px;
+    font-size:70px;
+}

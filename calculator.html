@@ -1,0 +1,91 @@
+<!DOCTYPE html><header lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="calculator.css" rel="stylesheet" />
+</header>
+
+
+<body>
+
+    <div class="container">
+    <div class="calculator">
+
+    <form>
+    <!--display.value → current text in the calculator screen.
+    we make all numbers to add to the current  text of the screen 
+    .slice(0, -1) → returns a new string from index 0 to the second-last character (because -1 means "one from the end").
+    -->
+
+    <input type="text" name="display" class="c">
+    <div class="first-row row">
+        <input style="margin-right: 5px;" type="button" value="AC" >
+        <input style="margin-right: 5px;" type="button" value="DE">
+        <input style="margin-right: 5px;" type="button" value="." >
+        <input type="button" value="/" >
+    </div>
+
+    <div class="second-row row">
+        <input style="margin-right: 5px;" type="button" value="7" >
+        <input style="margin-right: 5px;" type="button" value="8" >
+        <input style="margin-right: 5px;" type="button" value="9" >
+        <input type="button" value="*" id="operator" >
+    </div>
+
+    <div class="third-row row">
+        <input style="margin-right: 5px;" type="button" value="4" >
+        <input style="margin-right: 5px;" type="button" value="5" >
+        <input style="margin-right: 5px;" type="button" value="6" >
+        <input type="button" value="-" >
+    </div>
+
+    <div class="fourth-row row">
+        <input style="margin-right: 5px;" type="button" value="3" >
+        <input style="margin-right: 5px;" type="button" value="2" >
+        <input style="margin-right: 5px;" type="button" value="1" >
+        <input type="button" value="+" >
+    </div>
+
+    <div class="fifth-row row">
+        <input style="margin-right: 5px; "type="button" value="00" >
+        <input style="margin-right: 5px;"type="button" value="0" >
+        <input style="width:80vh;" type="button" value="=">
+    </div>
+    
+
+<div class="convertor">
+
+<div class="firstconvertor con">
+<input type="text" class="input">
+<select class="fromunit" placeholder="unit...">
+<option value="km">Kilometer</option>
+<option value="m">Meter</option>
+<option value="cm">Centimeter</option>
+
+
+</select>
+</div><!--1stconvertor-->
+
+<div class="secondconvertor con">
+<input type="text" class="output">
+
+<select class="tounit" >
+<option value="km">Kilometer</option>
+<option value="m">Meter</option>
+<option value="cm" >centimeter</option>
+</select>
+
+</div><!--2ndconvertor-->
+</div><!--convertor-->
+
+</div><!--calculator-->
+</div> <!--container-->
+</form>
+
+
+<script src="calculator.js"></script>
+
+</body>
+
+
+</html>
